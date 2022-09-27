@@ -1,21 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Imc</title>
      <link rel="stylesheet" href="css/style.css">
-     <script type="text/javascript" src="js/cod.js"></script>
+     <script defer type="text/javascript" src="js/cod.js"></script>
 </head>
 <body>
-     <h1>Cálculo do IMC</h1>
-     <input id="altura" type="number" size="10px" onkeydown placeholder="Altura(m)">
-     <input id="peso" type="number" size="10px" onekeydown placeholder="Peso(Kg)">
-     <button type="button" size="10px" onclick="imc()">Calcular IMC</button>
+     <div id="caixaMain">
+          <h1>Cálculo do IMC</h1>
+          <input id="altura" type="number" size="10px" onkeydown placeholder="Altura(m)">
+          <input id="peso" type="number" size="10px" onekeydown placeholder="Peso(Kg)">
+          <button id="botao" type="button" size="10px" onclick="tab()">Calcular IMC</button>
 
-     <div>
-          <p id="resp">Resposta do cálculo:</p>
+       <!-- <div>
+               <p id="resp">Resposta do cálculo:</p>
+          </div> -->
      </div>
+
+     <div id="containerTabela">
+          <table id="tabela">
+               <caption>Tabela IMC</caption>
+
+               <thead>
+                    <tr>
+                         <th>Altura</th>
+                         <th>Peso</th>
+                         <th>Imc</th>
+                         <th>Classifcação</th>
+                    </tr>
+               </thead>
+
+               <tbody>
+
+               </tbody>
+
+          </table>
+     </div>
+
+     
 </body>
 </html>
